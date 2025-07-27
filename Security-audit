@@ -1,0 +1,65 @@
+Conducting a Security-Audit/README.md
+# Botium Toys Controls and Compliance Checklist
+
+## 🔐 Controls Assessment
+
+| Control | In Place? | Explanation |
+|--------|-----------|-------------|
+| Least Privilege | ❌ No | There is no least privilege. Every employee has access to all data, including PII and SPII. |
+| Disaster Recovery Plans | ❌ No | No disaster recovery plans are in place. No backups exist. Business continuity is at risk. |
+| Password Policies | ❌ No | Password requirements are minimal and don’t meet complexity standards. Risk of unauthorized access. |
+| Separation of Duties | ❌ No | The CEO manages payroll and day-to-day operations. This increases fraud risk. |
+| Firewall | ✅ Yes | A firewall is in place with defined security rules. |
+| Intrusion Detection System (IDS) | ❌ No | No IDS is used. The IT department needs this capability. |
+| Backups | ❌ No | No backups of critical data exist. High risk to business continuity. |
+| Antivirus Software | ✅ Yes | Antivirus is installed and monitored regularly. |
+| Legacy System Monitoring | ⚠️ Partial | Legacy systems are monitored, but irregularly and without clear procedures. |
+| Encryption | ❌ No | No encryption is implemented. Confidentiality is compromised. |
+| Password Management System | ❌ No | No password manager. IT cannot efficiently support lockouts or recovery. |
+| Physical Locks | ✅ Yes | Sufficient locks exist at physical locations. |
+| CCTV Surveillance | ✅ Yes | CCTV is installed and functioning. |
+| Fire Detection/Prevention | ✅ Yes | Fire alarms and sprinklers are present. |
+
+---
+
+## ✅ Compliance Checklist
+
+### PCI DSS
+
+| Best Practice | In Place? | Explanation |
+|---------------|-----------|-------------|
+| Restrict access to credit card info | ❌ No | All employees have access to internal data. |
+| Secure credit card storage and transmission | ❌ No | Credit card data is not encrypted. |
+| Implement encryption for financial data | ❌ No | No encryption currently in use. |
+| Use secure password policies | ❌ No | No password management system; policies are weak. |
+
+### GDPR
+
+| Best Practice | In Place? | Explanation |
+|---------------|-----------|-------------|
+| Secure E.U. customer data | ❌ No | No encryption is in place. |
+| Notify customers within 72 hours of breach | ✅ Yes | A response plan exists. |
+| Classify and inventory data | ⚠️ Partial | Data is inventoried but not classified. |
+| Enforce privacy policies and processes | ✅ Yes | Enforced among IT and staff. |
+
+### SOC (Type 1 & 2)
+
+| Best Practice | In Place? | Explanation |
+|---------------|-----------|-------------|
+| User access policies | ❌ No | All employees have access. Least Privilege is not in place. |
+| Confidentiality of PII/SPII | ❌ No | No encryption or protection of sensitive data. |
+| Data integrity | ✅ Yes | Data is consistent and validated. |
+| Controlled data availability | ❌ No | All data is openly accessible. Should be restricted. |
+
+---
+
+## 💡 Recommendations
+
+To improve Botium Toys’ security posture:
+
+- Implement **Least Privilege** and **Separation of Duties**
+- Enforce strong **password policies** and adopt a **password manager**
+- Add **encryption** for sensitive data
+- Use an **Intrusion Detection System (IDS)**
+- Develop a **disaster recovery plan** and ensure regular **backups**
+- **Classify assets** for improved data handling and protection
